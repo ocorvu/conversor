@@ -5,20 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor Universal</title>
+    <!-- reset.css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Bootstrap5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Conversor Universal</h1>
 
-    <textarea name="input" id="inputID" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas eius quisquam. Impedit doloremque nulla maxime dignissimos tenetur. Ab molestiae eligendi laborum voluptates aliquid dolorum consequuntur cum, ducimus culpa? Reiciendis!</textarea>
-    
-    <textarea name="output" id="outputID" cols="30" rows="10" readonly></textarea>
-    <button id="maiusculo">Maiusculo</button>
-    <button id="minusculo">Minusculo</button>
-    <button id="capitalizar">Capitalizar</button>
-    <button id="upperLower">MaIsCuLo</button>
-    <button id="lowerUpper">mInUsCuLo</button>
+    <header class="d-flex align-items-center bg-dark text-bg-dark px-4 py-2 mb-2">
+        <h1 class="flex-grow-2">Conversor Universal</h1>
+        <ul class="d-flex flex-grow-1 justify-content-around m-0">
+            <li><a href="#texto">Texto</a></li>
+            <li><a href="#medida">Medida</a></li>
+        </ul>
+    </header>
 
+    <section id="texto" class="w-75 d-flex flex-column m-auto">
+        <h2 class="text-center">Texto</h2>
+        <h3>Insira seu texto abaixo:</h3>
+        <textarea class="mb-4" name="input" id="inputID" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas eius quisquam. Impedit doloremque nulla maxime dignissimos tenetur. Ab molestiae eligendi laborum voluptates aliquid dolorum consequuntur cum, ducimus culpa? Reiciendis!</textarea>
+        
+            <h3 class="mb-2">O resultado será exibido aqui:</h3>
+            <textarea class="mb-2" name="output" id="outputID" cols="30" rows="10" readonly></textarea>
 
+            <div class="d-flex justify-content-around">
+                <button id="maiusculo" class="btn btn-secondary">Maiusculo</button>
+                <button id="minusculo" class="btn btn-secondary">Minusculo</button>
+                <button id="capitalizar" class="btn btn-secondary">Capitalizar</button>
+                <button id="upperLower" class="btn btn-secondary">MaIsCuLo</button>
+                <button id="lowerUpper" class="btn btn-secondary">mInUsCuLo</button>
+            </div>
+    </section>
+
+    <section id="medida">
+        <h2>Medida</h2>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>
