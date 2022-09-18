@@ -23,10 +23,10 @@
     <section id="texto" class="w-75 d-flex flex-column mx-auto mb-4">
         <h2 class="text-center">Texto</h2>
         <h3>Insira seu texto abaixo:</h3>
-        <textarea class="mb-4" name="input" id="inputID" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas eius quisquam. Impedit doloremque nulla maxime dignissimos tenetur. Ab molestiae eligendi laborum voluptates aliquid dolorum consequuntur cum, ducimus culpa? Reiciendis!</textarea>
+        <textarea class="mb-4" name="inputText" id="inputTextID" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas eius quisquam. Impedit doloremque nulla maxime dignissimos tenetur. Ab molestiae eligendi laborum voluptates aliquid dolorum consequuntur cum, ducimus culpa? Reiciendis!</textarea>
         
             <h3 class="mb-2">O resultado será exibido aqui:</h3>
-            <textarea class="mb-2" name="output" id="outputID" cols="30" rows="10" readonly></textarea>
+            <textarea class="mb-2" name="outputText" id="outputTextID" cols="30" rows="10" readonly></textarea>
 
             <div class="d-flex justify-content-around">
                 <button id="maiusculo" class="btn btn-secondary">Maiusculo</button>
@@ -34,7 +34,7 @@
                 <button id="capitalizar" class="btn btn-secondary">Capitalizar</button>
                 <button id="upperLower" class="btn btn-secondary">MaIsCuLo</button>
                 <button id="lowerUpper" class="btn btn-secondary">mInUsCuLo</button>
-                <button id="clipboard" class="btn btn-secondary" onclick="copyToClipBoard()">Copiar texto</button>
+                <button id="clipboard" class="btn btn-secondary">Copiar texto</button>
             </div>
 
             <h4>Maiusculo</h4>
@@ -56,6 +56,32 @@
 
     <section id="medida" class="w-75 d-flex flex-column mx-auto mb-4">
         <h2 class="text-center">Medida</h2>
+
+        <label for="inputNumberID">
+            <select name="inputMeter" id="inputMeterID">
+                <option value="km">km</option>
+                <option value="hm">hm</option>
+                <option value="dam">dam</option>
+                <option value="m">m</option>
+                <option value="dm">dm</option>
+                <option value="cm">cm</option>
+                <option value="mm">mm</option>
+            </select>
+        </label>
+        <input type="number" id="inputNumberID" min="0" placeholder="0">
+
+        <label for="outputNumberID">
+            <select name="outputMeter" id="outputMeterID">
+                <option value="km">km</option>
+                <option value="hm">hm</option>
+                <option value="dam">dam</option>
+                <option value="m">m</option>
+                <option value="dm">dm</option>
+                <option value="cm">cm</option>
+                <option value="mm">mm</option>
+            </select>
+        </label>
+        <input type="number" id="outputNumberID" min="0" placeholder="0">
     </section>
     <script src="js/main.js"></script>
 </body>
