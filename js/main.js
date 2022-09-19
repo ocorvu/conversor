@@ -102,10 +102,28 @@ clipboard.addEventListener('click', () => copyToClipBoard(), false)
 
 let inputNumber = document.getElementById('inputNumberID');
 let outputNumber = document.getElementById('outputNumberID');
+let outputUnit = document.getElementById('unitID')
 
+console.log(outputUnit[0])
 
-function meterConversor(number) {
-    switc
+function meterConversor(firstUnit, secondUnit, number) {
+    switch (unit) {
+        case 'km':
+            number
+            break;
+        case 'km':
+            break;
+        case 'dam':
+            break;
+        case 'm':
+            break;
+        case 'dm':
+            break;
+        case 'cm':
+            break;
+        case 'mm':
+            break
+    }
 }
 
 inputNumber.addEventListener('change', ()=> {
