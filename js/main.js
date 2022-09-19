@@ -1,11 +1,13 @@
-let input = document.getElementById("inputID");
-let output = document.getElementById("outputID");
+let input = document.getElementById("inputTextID");
+let output = document.getElementById("outputTextID");
 let maiusculo = document.getElementById("maiusculo");
 let minusculo = document.getElementById("minusculo");
 let capitalizar = document.getElementById("capitalizar");
 let upperLower = document.getElementById("upperLower");
 let lowerUpper = document.getElementById("lowerUpper");
 let clipboard = document.getElementById("clipboard");
+
+// TEXT
 
 function capitalize(text) {
     textArray = text.split(' ');
@@ -95,3 +97,21 @@ lowerUpper.addEventListener('click', () => {
 })
 
 clipboard.addEventListener('click', () => copyToClipBoard(), false)
+
+// NUMBER
+
+let inputNumber = document.getElementById('inputNumberID');
+let outputNumber = document.getElementById('outputNumberID');
+
+
+function meterConversor(number) {
+    switc
+}
+
+inputNumber.addEventListener('change', ()=> {
+    outputNumber.value = inputNumber.value;
+})
+
+outputNumber.addEventListener('change', ()=> {
+    inputNumber.value = outputNumber.value
+})
