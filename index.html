@@ -5,34 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor Universal</title>
-    <!-- reset.css -->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- Bootstrap5 CSS -->
+    <link rel="stylesheet" href="css/app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
 
-    <header class="d-flex align-items-center bg-dark text-bg-dark px-4 py-2 mb-2">
-        <h1 class="flex-grow-2">Conversor Universal</h1>
-        <ul class="d-flex flex-grow-1 justify-content-around m-0">
-            <li><a href="#texto">Texto</a></li>
-            <li><a href="#medida">Medida</a></li>
+    <header>
+        <h1>Conversor Universal</h1>
+        <ul>
+            <li><a href="#texto" class="text-decoration-none">Texto</a></li>
+            <li><a href="#medida" class="text-decoration-none">Medida</a></li>
         </ul>
     </header>
 
-    <section id="texto" class="w-75 d-flex flex-column mx-auto mb-4">
-        <h2 class="text-center">Texto</h2>
+    <section id="texto">
+        <h2>Texto</h2>
         <h3>Insira seu texto abaixo:</h3>
-        <textarea class="mb-4" name="inputText" id="inputTextID" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas eius quisquam. Impedit doloremque nulla maxime dignissimos tenetur. Ab molestiae eligendi laborum voluptates aliquid dolorum consequuntur cum, ducimus culpa? Reiciendis!</textarea>
-        
-            <h3 class="mb-2">O resultado será exibido aqui:</h3>
-            <textarea class="mb-2" name="outputText" id="outputTextID" cols="30" rows="10" readonly></textarea>
 
-            <div class="d-flex justify-content-around">
+        <textarea name="input" id="inputID" cols="30" rows="10" placeholder="Escreva Algo..."></textarea>
+        
+            <h3>O resultado será exibido aqui:</h3>
+            <textarea name="output" id="outputID" cols="30" rows="10" readonly></textarea>
+
+            <div id="buttons">
                 <button id="maiusculo" class="btn btn-secondary">Maiusculo</button>
                 <button id="minusculo" class="btn btn-secondary">Minusculo</button>
                 <button id="capitalizar" class="btn btn-secondary">Capitalizar</button>
-                <button id="upperLower" class="btn btn-secondary">MaIsCuLo</button>
+                <button id="upperLower" class="btn btn-secondary">MaIuScUlO</button>
                 <button id="lowerUpper" class="btn btn-secondary">mInUsCuLo</button>
                 <button id="clipboard" class="btn btn-secondary">Copiar texto</button>
             </div>
@@ -46,7 +46,7 @@
             <h4>Capitalizar</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis error quae esse. Optio at facilis exercitationem nulla modi qui, officiis, voluptate quae porro quam rem nesciunt vero libero enim.</p>
 
-            <h4>MaIsCuLo</h4>
+            <h4>MaIuScUlO</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit dolor ipsum aperiam explicabo vero eveniet adipisci, neque eum aspernatur quaerat inventore nam animi dolorum? Omnis perspiciatis vel iste iusto!</p>
             
             <h4>mInUsCuLo</h4>
