@@ -23,10 +23,10 @@
         <h2>Texto</h2>
         <h3>Insira seu texto abaixo:</h3>
 
-        <textarea name="input" id="inputID" cols="30" rows="10" placeholder="Escreva Algo..."></textarea>
+        <textarea name="input" id="inputTextID" cols="30" rows="10" placeholder="Escreva Algo...">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi earum minima non repellendus corrupti veritatis, id nostrum recusandae quibusdam hic minus, molestiae, iure rerum nihil accusamus provident quaerat molestias maxime?</textarea>
         
             <h3>O resultado será exibido aqui:</h3>
-            <textarea name="output" id="outputID" cols="30" rows="10" readonly></textarea>
+            <textarea name="output" id="outputTextID" cols="30" rows="10" readonly></textarea>
 
             <div id="buttons">
                 <button id="maiusculo" class="btn btn-secondary">Maiusculo</button>
@@ -51,7 +51,6 @@
             
             <h4>mInUsCuLo</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, asperiores commodi. Totam fugiat reiciendis tenetur, nemo dolor beatae iure dolorum necessitatibus assumenda deserunt placeat delectus tempora commodi repudiandae consequatur doloremque!</p>
-
     </section>
 
     <section id="medida" class="w-75 d-flex flex-column mx-auto mb-4">
@@ -59,29 +58,31 @@
 
         <label for="inputNumberID">
             <select name="inputMeter" id="inputMeterID">
-                <option value="km">km</option>
-                <option value="hm">hm</option>
-                <option value="dam">dam</option>
-                <option value="m">m</option>
-                <option value="dm">dm</option>
-                <option value="cm">cm</option>
-                <option value="mm">mm</option>
+                <option value="1000">km</option>
+                <option value="100">hm</option>
+                <option value="10">dam</option>
+                <option value="1">m</option>
+                <option value="0.1">dm</option>
+                <option value="0.01">cm</option>
+                <option value="0.001">mm</option>
             </select>
         </label>
         <input type="number" id="inputNumberID" min="0" placeholder="0">
 
         <label for="outputNumberID">
-            <select name="unit" id="unitID">
-                <option value="km">km</option>
-                <option value="hm">hm</option>
-                <option value="dam">dam</option>
-                <option value="m">m</option>
-                <option value="dm">dm</option>
-                <option value="cm">cm</option>
-                <option value="mm">mm</option>
+            <select name="unit" id="outputMeterID">
+                <option value="1000">km</option>
+                <option value="100">hm</option>
+                <option value="10">dam</option>
+                <option value="1">m</option>
+                <option value="0.1">dm</option>
+                <option value="0.01">cm</option>
+                <option value="0.001">mm</option>
             </select>
         </label>
         <input type="number" id="outputNumberID" min="0" placeholder="0">
+
+        <p class="fst-italic">Selecione as unidades em que deseja a conversão, digite o valor e pressione 'Enter'. Também funciona ao clicar em qualquer lugar da tela.</p>
     </section>
     <script src="js/main.js"></script>
 </body>

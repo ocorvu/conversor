@@ -1,3 +1,6 @@
+// TEXT
+
+// variables
 let input = document.getElementById("inputTextID");
 let output = document.getElementById("outputTextID");
 let maiusculo = document.getElementById("maiusculo");
@@ -7,8 +10,7 @@ let upperLower = document.getElementById("upperLower");
 let lowerUpper = document.getElementById("lowerUpper");
 let clipboard = document.getElementById("clipboard");
 
-// TEXT
-
+// functions
 function capitalize(text) {
     textArray = text.split(' ');
     textOutput = '';
@@ -71,6 +73,7 @@ function removeCssClass(element, ...params) {
     element.classList.remove(...params);
 }
 
+//events
 maiusculo.addEventListener('click',  () => {
     output.innerText = input.value.toUpperCase();
     removeCssClass(clipboard, 'btn-success');
@@ -100,36 +103,23 @@ clipboard.addEventListener('click', () => copyToClipBoard(), false)
 
 // NUMBER
 
+// variables
 let inputNumber = document.getElementById('inputNumberID');
 let outputNumber = document.getElementById('outputNumberID');
-let outputUnit = document.getElementById('unitID')
+let inputUnit = document.getElementById('inputMeterID');
+let outputUnit = document.getElementById('outputMeterID');
 
-console.log(outputUnit[0])
-
+//functions
 function meterConversor(firstUnit, secondUnit, number) {
-    switch (unit) {
-        case 'km':
-            number
-            break;
-        case 'km':
-            break;
-        case 'dam':
-            break;
-        case 'm':
-            break;
-        case 'dm':
-            break;
-        case 'cm':
-            break;
-        case 'mm':
-            break
-    }
+    res = (firstUnit / secondUnit) * number
+    return res
 }
 
+//events
 inputNumber.addEventListener('change', ()=> {
-    outputNumber.value = inputNumber.value;
+    outputNumber.value = meterConversor(inputUnit.value, outputUnit.value, inputNumber.value);
 })
 
 outputNumber.addEventListener('change', ()=> {
-    inputNumber.value = outputNumber.value
+    inputNumber.value = meterConversor(outputUnit.value, inputUnit.value, inputNumber.value);
 })
