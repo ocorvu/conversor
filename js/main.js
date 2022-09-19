@@ -9,11 +9,13 @@ let capitalizar = document.getElementById("capitalizar");
 let upperLower = document.getElementById("upperLower");
 let lowerUpper = document.getElementById("lowerUpper");
 let clipboard = document.getElementById("clipboard");
+let inverse = document.getElementById("inverse");
+let reverse = document.getElementById("reverse");
 
 // functions
 function capitalize(text) {
-    textArray = text.split(' ');
-    textOutput = '';
+    let textArray = text.split(' ');
+    let textOutput = '';
 
     textArray.forEach(el => {
         first = el[0][0].toUpperCase();
@@ -58,6 +60,33 @@ function lowerUpperCase(text){
     return textOutput;
 }
 
+function inverseText(text) {
+    textOutput = ''
+    textArray = text.split(' ')
+    textArray.forEach(word => {
+        wordArray = word.split('')
+        wordArray.reverse();
+        wordArray.forEach(letter => {
+            textOutput += letter;
+        })
+        textOutput += ' '
+    })
+    
+    return textOutput;
+}
+
+function reverseText(text) {
+    let textOutput = '';
+    textArray = inverseText(text).split(' ');
+    textArray.reverse()
+    textArray.forEach(word =>{
+        textOutput += ` ${word}`
+    })
+    
+    return textOutput.trim();
+
+}
+
 function copyToClipBoard() {
 
     var copyText = output;
@@ -97,6 +126,14 @@ upperLower.addEventListener('click', ()=> {
 lowerUpper.addEventListener('click', () => {
     output.innerText = lowerUpperCase(input.value);
     removeCssClass(clipboard, 'btn-success');
+})
+
+inverse.addEventListener('click', ()=> {
+    output.innerText = inverseText(input.value);
+})
+
+reverse.addEventListener('click', ()=> {
+    output.innerText = reverseText(input.value)
 })
 
 clipboard.addEventListener('click', () => copyToClipBoard(), false)
