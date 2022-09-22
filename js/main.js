@@ -158,5 +158,5 @@ inputNumber.addEventListener('change', ()=> {
 })
 
 outputNumber.addEventListener('change', ()=> {
-    inputNumber.value = meterConversor(outputUnit.value, inputUnit.value, inputNumber.value);
+    inputNumber.value = meterConversor(outputUnit.value, inputUnit.value, outputNumber.value);
 })
