@@ -1,9 +1,9 @@
 body {
-    width: 100%;
+    max-width: max-content;
 }
 
 header {
-    background-color: brown;
+    background-color: #6c757d;
     display: inline-flex;
     align-items: center;
     width: 100%;
@@ -18,11 +18,9 @@ header h1 {
 
 ul {
     display: inline-flex;
-    align-items: center;
-    align-content: center;
-    flex-grow: 1;
     justify-content: flex-end;
-    margin-top: 16px;
+    top: 50%;
+    transform: translate(0, 25%);
 }
 ul li {
     margin-right: 12px;
@@ -31,32 +29,51 @@ ul li {
 ul li a {
     color: rgba(0, 0, 0, var(--tw-text-opacity));
     font-weight: bold;
+    text-align: center;
 }
 
-section {
-    width: 630px;
+#texto {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 40px;
+    margin-top: 32px;
     margin-bottom: 100px;
 }
 
 h2 {
     text-align:center;
     margin-top: 24px;
-    margin-bottom: 48px;
-}
-
-textarea {
     margin-bottom: 80px;
 }
 
-textarea h3 {
-    margin-bottom: 48px;
+h3 {
+    margin-top: 48px;
+    margin-bottom: 64px;
 }
 
-#outputID {
+.titulo-in {
+    margin-bottom: 24px;
+}
+
+#inputTextID {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.titulo-out {
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+
+#outputTextID {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    border-radius: 20px;
     margin-bottom: 24px;
 }
 
@@ -64,6 +81,8 @@ textarea h3 {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
+    width: 60%;
+    margin-bottom: 48px;
 }
 
 #maiusculo {
@@ -131,11 +150,36 @@ textarea h3 {
     border-radius: 24px;
 }
 
+#inverse {
+    margin-right: 5px;
+    width: 250px;
+    height:50px;
+    border-radius: 24px;
+}
+#inverse:hover {
+    margin-right: 5px;
+    width: 300px;
+    height:75px;
+    border-radius: 24px;
+}
+
+#reverse {
+    margin-right: 5px;
+    width: 250px;
+    height:50px;
+    border-radius: 24px;
+}
+#reverse:hover {
+    margin-right: 5px;
+    width: 300px;
+    height:75px;
+    border-radius: 24px;
+}
+
 #clipboard {
     width: 250px;
     height:56px;
     border-radius: 24px;
-    font-size: 14px;
 }
 #clipboard:hover {
     width: 300px;
@@ -143,6 +187,53 @@ textarea h3 {
     border-radius: 24px;
 }
 
-textarea h4 :first {
-    margin-top: 64px;
+#explicacao {
+    display: block;
+    width: 80%;
+}
+
+#medida {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 40px;
+    margin-top: 32px;
+    margin-bottom: 100px;
+}
+
+.medida-titulo {
+    text-align:center;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+#inputNumberID {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#inputMeterID {
+    width: 52px;
+    height:32px;
+    border-radius: 16px;
+}
+
+#outputNumberID {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#outputMeterID {
+    width: 52px;
+    height:32px;
+    border-radius: 16px;
 }

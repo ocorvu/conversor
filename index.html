@@ -21,42 +21,44 @@
 
     <section id="texto">
         <h2>Texto</h2>
-        <h3>Insira seu texto abaixo:</h3>
+        <h3 class="titulo-in">Insira seu texto abaixo:</h3>
 
         <textarea name="input" id="inputTextID" cols="30" rows="10" placeholder="Escreva Algo...">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi earum minima non repellendus corrupti veritatis, id nostrum recusandae quibusdam hic minus, molestiae, iure rerum nihil accusamus provident quaerat molestias maxime?</textarea>
         
-            <h3>O resultado será exibido aqui:</h3>
-            <textarea name="output" id="outputTextID" cols="30" rows="10" readonly></textarea>
+        <h3  class="titulo-out">O resultado será exibido aqui:</h3>
+        <textarea name="output" id="outputTextID" cols="30" rows="10" readonly></textarea>
 
-            <div id="buttons">
-                <button id="maiusculo" class="btn btn-secondary">Maiusculo</button>
-                <button id="minusculo" class="btn btn-secondary">Minusculo</button>
-                <button id="capitalizar" class="btn btn-secondary">Capitalizar</button>
-                <button id="upperLower" class="btn btn-secondary">MaIuScUlO</button>
-                <button id="lowerUpper" class="btn btn-secondary">mInUsCuLo</button>
-                <button id="inverse" class="btn btn-secondary">Inverso</button>
-                <button id="reverse" class="btn btn-secondary">Reverso</button>
-                <button id="clipboard" class="btn btn-secondary">Copiar texto</button>
-            </div>
+        <div id="buttons">
+            <button id="maiusculo" class="btn btn-secondary">Maiusculo</button>
+            <button id="minusculo" class="btn btn-secondary">Minusculo</button>
+            <button id="capitalizar" class="btn btn-secondary">Capitalizar</button>
+            <button id="upperLower" class="btn btn-secondary">MaIuScUlO</button>
+            <button id="lowerUpper" class="btn btn-secondary">mInUsCuLo</button>
+            <button id="inverse" class="btn btn-secondary">Inverso</button>
+            <button id="reverse" class="btn btn-secondary">Reverso</button>
+            <button id="clipboard" class="btn btn-secondary">Copiar texto</button>
+        </div>
 
-            <h4>Maiusculo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, saepe eos fugiat neque eius necessitatibus voluptate repudiandae, placeat ad temporibus itaque omnis corporis amet similique modi atque culpa! Odio, officia!</p>
+        <div id="explicacao">
+            <h4 class="maiusculo-titulo">Maiusculo</h4>
+            <p class="maiusculo-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, saepe eos fugiat neque eius necessitatibus voluptate repudiandae, placeat ad temporibus itaque omnis corporis amet similique modi atque culpa! Odio, officia!</p>
 
-            <h4>Minusculo</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque eos odio quaerat obcaecati praesentium corrupti non explicabo dolore cum quidem veniam, quasi, iure dignissimos, ducimus dolor neque culpa cupiditate!</p>
+            <h4 class="minusculo-titulo">Minusculo</h4>
+            <p class="minusculo-paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque eos odio quaerat obcaecati praesentium corrupti non explicabo dolore cum quidem veniam, quasi, iure dignissimos, ducimus dolor neque culpa cupiditate!</p>
 
-            <h4>Capitalizar</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis error quae esse. Optio at facilis exercitationem nulla modi qui, officiis, voluptate quae porro quam rem nesciunt vero libero enim.</p>
+            <h4 class="capitalizar-titulo">Capitalizar</h4>
+            <p class="capitalizar-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis error quae esse. Optio at facilis exercitationem nulla modi qui, officiis, voluptate quae porro quam rem nesciunt vero libero enim.</p>
 
-            <h4>MaIuScUlO</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit dolor ipsum aperiam explicabo vero eveniet adipisci, neque eum aspernatur quaerat inventore nam animi dolorum? Omnis perspiciatis vel iste iusto!</p>
+            <h4 class="maiusculo-titulo-alternativo">MaIuScUlO</h4>
+            <p class="maiusculo-paragrafo-alternativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit dolor ipsum aperiam explicabo vero eveniet adipisci, neque eum aspernatur quaerat inventore nam animi dolorum? Omnis perspiciatis vel iste iusto!</p>
             
-            <h4>mInUsCuLo</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, asperiores commodi. Totam fugiat reiciendis tenetur, nemo dolor beatae iure dolorum necessitatibus assumenda deserunt placeat delectus tempora commodi repudiandae consequatur doloremque!</p>
+            <h4 class="minusculo-titulo-alternativo">mInUsCuLo</h4>
+            <p class="minusculo-paragrafo-alternativo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, asperiores commodi. Totam fugiat reiciendis tenetur, nemo dolor beatae iure dolorum necessitatibus assumenda deserunt placeat delectus tempora commodi repudiandae consequatur doloremque!</p>
+        </div>  
     </section>
 
-    <section id="medida" class="w-75 d-flex flex-column mx-auto mb-4">
-        <h2 class="text-center">Medida</h2>
+    <section id="medida">
+        <h2 class="medida-titulo">Medida</h2>
 
         <label for="inputNumberID">
             <select name="inputMeter" id="inputMeterID">
