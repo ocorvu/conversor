@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: brown;
+    background-color: #6c757d;
     display: inline-flex;
     align-items: center;
     width: 100%;
@@ -18,11 +18,9 @@ header h1 {
 
 ul {
     display: inline-flex;
-    align-items: center;
-    align-content: center;
-    flex-grow: 1;
     justify-content: flex-end;
-    margin-top: 16px;
+    top: 50%;
+    transform: translate(0, 25%);
 }
 ul li {
     margin-right: 12px;
@@ -31,6 +29,7 @@ ul li {
 ul li a {
     color: rgba(0, 0, 0, var(--tw-text-opacity));
     font-weight: bold;
+    text-align: center;
 }
 
 #texto {
@@ -62,6 +61,7 @@ h3 {
     display: flex;
     justify-content: center;
     width: 60%;
+    border-radius: 20px;
 }
 
 .titulo-out {
@@ -73,6 +73,7 @@ h3 {
     display: flex;
     justify-content: center;
     width: 60%;
+    border-radius: 20px;
     margin-bottom: 24px;
 }
 
@@ -188,13 +189,51 @@ h3 {
 
 #explicacao {
     display: block;
+    width: 80%;
+}
+
+#medida {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 40px;
+    margin-top: 32px;
+    margin-bottom: 100px;
 }
 
-.maiusculo-titulo {
-    text-align: justify;
+.medida-titulo {
+    text-align:center;
+    margin-top: 24px;
+    margin-bottom: 60px;
 }
 
-.maiusculo-paragrafo {
-    text-align: justify;
+#inputNumberID {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#inputMeterID {
+    width: 52px;
+    height:32px;
+    border-radius: 16px;
+}
+
+#outputNumberID {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#outputMeterID {
+    width: 52px;
+    height:32px;
+    border-radius: 16px;
 }
