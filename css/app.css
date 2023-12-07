@@ -1,5 +1,6 @@
 body {
     max-width: max-content;
+    width: 100%;
 }
 
 header {
@@ -14,6 +15,7 @@ header {
 }
 header h1 {
     flex-grow: 2;
+    width: 100%;
 }
 
 ul {
@@ -33,7 +35,6 @@ ul li a {
 }
 
 #texto {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -193,7 +194,6 @@ h3 {
 }
 
 #medida {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-right: auto;
